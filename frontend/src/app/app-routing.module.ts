@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routes } from '@angular/router';
-import { SignInComponent } from './sign-in/sign-in.component';
-import { SignUpComponent } from './sign-up/sign-up.component';
-import { PetComponent } from './pet/pet.component';
-import { ResourcesComponent } from './resources/resources.component';
-import { CommunityComponent } from './community/community.component';
-import { AnalyticsComponent } from './analytics/analytics.component';
+import { SignInComponent } from './cc/sign-in/sign-in.component';
+import { SignUpComponent } from './cc/sign-up/sign-up.component';
+import { PetComponent } from './cc/pet/pet.component';
+import { ResourcesComponent } from './cc/resources/resources.component';
+import { CommunityComponent } from './cc/community/community.component';
+import { AnalyticsComponent } from './cc/analytics/analytics.component';
 
 export const routes: Routes = [
   AnalyticsComponent.Route,
@@ -16,10 +16,18 @@ export const routes: Routes = [
   PetComponent.Route,
   ResourcesComponent.Route,
 {
+  path: 'analytics',
+  title: 'Analytics',
+  loadComponent: () =>
+    import('./cc/analytics/analytics.component').then(
+      (m) => m.AnalyticsComponent
+    )
+},
+{
   path: 'community',
   title: 'Community',
   loadComponent: () =>
-    import('./community/community.component').then(
+    import('./cc/community/community.component').then(
       (m) => m.CommunityComponent
     )
 },
@@ -27,7 +35,7 @@ export const routes: Routes = [
   path: 'pet',
   title: 'Pet',
   loadComponent: () =>
-    import('./pet/pet.component').then(
+    import('./cc/pet/pet.component').then(
       (m) => m.PetComponent
     )
 },
@@ -35,7 +43,7 @@ export const routes: Routes = [
   path: 'resources',
   title: 'Resources',
   loadComponent: () =>
-    import('./resources/resources.component').then(
+    import('./cc/resources/resources.component').then(
       (m) => m.ResourcesComponent
     )
 },
@@ -43,7 +51,7 @@ export const routes: Routes = [
   path: 'sign-in',
   title: 'SignIn',
   loadComponent: () =>
-    import('./sign-in/sign-in.component').then(
+    import('./cc/sign-in/sign-in.component').then(
       (m) => m.SignInComponent
     )
 },
@@ -51,7 +59,7 @@ export const routes: Routes = [
   path: 'sign-up',
   title: 'SignUp',
   loadComponent: () =>
-    import('./sign-up/sign-up.component').then(
+    import('./cc/sign-up/sign-up.component').then(
       (m) => m.SignUpComponent
     )
 }

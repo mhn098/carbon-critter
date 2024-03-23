@@ -1,4 +1,8 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { ActivatedRoute, Router } from '@angular/router';
+import { AppModule } from '../../app.module';
+import { CCService } from '../cc.service';
 
 @Component({
   selector: 'app-pet',
@@ -15,6 +19,6 @@ export class PetComponent {
     canActivate: []
   };
 constructor(
-  public functionService: PetComponent
+  public ccService: CCService
 ) {}
 }
