@@ -19,6 +19,11 @@ export class SignUpComponent {
     canActivate: []
   };
 constructor(
-  public ccService: CCService
+  public ccService: CCService,
+  private router: Router
 ) {}
+public onSubmit(name: string) {
+  // this.pet_name = name;
+  this.router.navigate(['pet']);
+}
 }
