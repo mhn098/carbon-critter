@@ -1,1 +1,44 @@
-<p>sign-up works!</p>
+<div class="container">
+    <form>
+      <!-- first name -->
+      <mat-form-field hintLabel="Max 30 characters" appearance="outline" color="accent">
+        <mat-label>First Name</mat-label>
+        <input #fname type="text" matInput placeholder="Enter first name here." name="firstname" />
+      </mat-form-field>
+  
+      <!-- last name -->
+      <mat-form-field hintLabel="Max 30 characters" appearance="outline" color="accent">
+        <mat-label>Last Name</mat-label>
+        <input #lname type="text" matInput placeholder="Enter last name here." name="lastname" />
+      </mat-form-field>
+  
+      <!-- email -->
+      <mat-form-field hintLabel="Max 50 characters" appearance="outline" color="accent">
+        <mat-label>Email</mat-label>
+        <input #email type="email" matInput placeholder="Enter email here." name="email" />
+      </mat-form-field>
+  
+      <!-- password -->
+      <mat-form-field hintLabel="Password" appearance="outline" color="accent">
+        <mat-label>Password</mat-label>
+        <input #pw type="password" matInput placeholder="Enter password here." name="password" />
+      </mat-form-field>
+  
+      <!-- password confirmation -->
+      <mat-form-field hintLabel="Password Confirm" appearance="outline" color="accent">
+        <mat-label>Confirm Password</mat-label>
+        <input #pwconfirmtype="password" matInput placeholder="Confirm password." name="passwordConfirm" />
+      </mat-form-field>
+  
+      <!-- pet name -->
+      <mat-form-field hintLabel="Max 30 characters" appearance="outline" color="accent">
+        <mat-label>Pet Name</mat-label>
+        <input #pet type="text" matInput placeholder="Enter pet name here." name="petname" />
+      </mat-form-field>
+  
+      <button type="button" (click)="this.onSubmit(pet.value)">
+        Submit
+      </button>
+      
+    </form>
+  </div>
