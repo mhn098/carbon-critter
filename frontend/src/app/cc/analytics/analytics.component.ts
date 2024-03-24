@@ -24,11 +24,11 @@ constructor(
 ) {}
 
 public goAnalytics() {
-  this.router.navigate(['pet']);
+  this.router.navigate(['analytics']);
 }
 
 public goCommunity() {
-  this.router.navigate(['pet']);
+  this.router.navigate(['community']);
 }
 
 public goPet() {
@@ -36,11 +36,11 @@ public goPet() {
 }
 
 public goResources() {
-  this.router.navigate(['pet']);
+  this.router.navigate(['resources']);
 }
 
 public goSignOut() {
-  this.router.navigate(['pet']);
+  this.router.navigate(['sign-out']);
 }
 
 }
