@@ -1,4 +1,4 @@
-import string
+# import string
 import os
 import site
 import sys
@@ -70,8 +70,8 @@ def rag_answer(question):
         return "Sorry, something went wrong. Please try again later."
 
 class ccService:
-     def create_user(self, info: string) -> None:
+     def create_user(self, info: str) -> None:
          knowledge_base.append(info)
      
-     def get_answer(self, question: string) -> string:
+     def get_answer(self, question: str) -> str:
         return rag_answer(question)
