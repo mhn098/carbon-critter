@@ -1,20 +1,27 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
-export class CCService {
+export class CCService{
 
-  // first_name: string = '';
-  // last_name: string = '';
-  // email: string = '';
-  // password: string = '';
+constructor(
+  protected http: HttpClient,
+  private router: Router) {}
+
   pet: Pet = Pet.Temp;
   pet_sound: string = '';
   pet_name: string = '';
-  
-  constructor(private router: Router) {}
+
+  createUser(userData: String) {
+    this.http.post<any>('/api/pet', userData)
+  }
+  get_answer(question: String): Observable<String> {
+    return this.http.get<String>(`/api/pet/${question}`)
+  }
 
   public bunny1() {
     this.pet = Pet.Bunny;
@@ -101,6 +108,8 @@ export class CCService {
     this.pet_name = name;
     this.router.navigate(['pet']);
   }
+
+  
 }
 
 enum Pet {
