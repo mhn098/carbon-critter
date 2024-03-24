@@ -1,30 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!-- <head>
     <meta charset="UTF-8">
-    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0"> ???-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> ???
     <title>Carbon Critter</title>
     <link rel="icon" type="img/png" href="../../assets/images/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="analytics.component.css">
-</head>
-<body>
+</head> -->
+<!-- <body> -->
     <div class="nav-bar">
-        <img src="../../assets/images/favicon.png" class="logo">
+        <img src="assets/images/favicon.png" class="logo">
         <h1 class="header">Carbon Critters!</h1>
     </div>
-    <div class="sidebar"></div>
-    
   <div class="sidebar">
     <ul>
-      <li><a href="#">Analytics</a></li>
-      <li><a href="#">Community</a></li>
-      <li><a href="#">Pet</a></li>
-      <li><a href="#">Resources</a></li>
-      <li><a href="#">Sign Out</a></li>
+      <li><button type="button" class="hoverable" (click)="this.goAnalytics()">Analytics</button></li>
+      <li><button type="button" class="hoverable" (click)="this.goCommunity()">Community</button></li>
+      <li><button type="button" class="hoverable" (click)="this.goPet()">Pet</button></li>
+      <li><button type="button" class="hoverable" (click)="this.goResources()">Resources</button></li>
+      <li><button type="button" class="hoverable" (click)="this.goSignOut()">Sign Out</button></li>
     </ul>
   </div>
-</body>
-</html>
+<!-- </body> -->

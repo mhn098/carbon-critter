@@ -19,6 +19,7 @@ export class CCService {
   public bunny1() {
     this.pet = Pet.Bunny;
     this.pet_sound = 'Squeak!'
+    console.log('bunny1!')
   }
 
   public cat2() {
@@ -86,14 +87,14 @@ export class CCService {
     this.pet_sound = 'Hi!'
   }
 
-  public koala15() {
+  public hippo15() {
     this.pet = Pet.Koala
     this.pet_sound = 'Hi!'
   }
 
   public frog16() {
     this.pet = Pet.Frog
-    this.pet_sound = 'Ribit!'
+    this.pet_sound = 'Ribbit!'
   }
 
   public onSubmit(name: string) {
