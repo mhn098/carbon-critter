@@ -1,4 +1,6 @@
+import string
 from fastapi import APIRouter, Depends
+from ..services.llm import ccService
 
 api = APIRouter(prefix="/api/llm")
 openapi_tags = {
@@ -10,16 +12,16 @@ openapi_tags = {
 # Creates a new pomodoro timer.
 # Note: This API will take in a request body. What type should this be?
 # Expected return type: PomodoroTimer
-@api.post("", response_model=String, tags=["LLM"])
-def create_response(temp: String, ccService: ccService = Depends(),
-) -> String:
-    return ccService.create_string(temp)
+@api.post("", response_model=string, tags=["LLM"])
+def create_user(temp: string, ccService: ccService = Depends(),
+) -> None:
+    return ccService.create_user(temp)
 
 # TODO: Implement the following API:
 # GET /api/productivity/{id}
 # Get a pomodoro timer by its ID.
 # Expected return type: PomodoroTimer
-@api.get("", response_model=String, tags=["LLM"])
-def get_response(temp: String, ccService: ccService = Depends(),
-) -> String:
-    return ccService.get_response()
+@api.get("", response_model=string, tags=["LLM"])
+def get_answer(temp: string, ccService: ccService = Depends(),
+) -> string:
+    return ccService.get_answer()
