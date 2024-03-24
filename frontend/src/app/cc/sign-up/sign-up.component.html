@@ -1,3 +1,25 @@
+
+  <div class="container">
+    <div class="grid">
+      <div class="grid-item"><button type="button" class="hoverable" (click)="ccService.bunny1()"><img src="assets/images/temp/png/bunny1.png"></button></div>
+      <div class="grid-item"><button type="button" class="hoverable" (click)="ccService.cat2()"><img src="assets/images/temp/png/cat2.png"></button></div>
+      <div class="grid-item"><button type="button" class="hoverable" (click)="ccService.dog3()"><img src="assets/images/temp/png/dog3.png"></button></div>
+      <div class="grid-item"><button type="button" class="hoverable" (click)="ccService.hamster4()"><img src="assets/images/temp/png/hamster4.png"></button></div>
+      <div class="grid-item"><button type="button" class="hoverable" (click)="ccService.chicken5()"><img src="assets/images/temp/png/chicken5.png"></button></div>
+      <div class="grid-item"><button type="button" class="hoverable" (click)="ccService.fox6()"><img src="assets/images/temp/png/fox6.png"></button></div>
+      <div class="grid-item"><button type="button" class="hoverable" (click)="ccService.lion7()"><img src="assets/images/temp/png/lion7.png"></button></div>
+      <div class="grid-item"><button type="button" class="hoverable" (click)="ccService.monkey8()"><img src="assets/images/temp/png/monkey8.png"></button></div>
+      <div class="grid-item"><button type="button" class="hoverable" (click)="ccService.elephant9()"><img src="assets/images/temp/png/elephant9.png"></button></div>
+      <div class="grid-item"><button type="button" class="hoverable" (click)="ccService.turtle10()"><img src="assets/images/temp/png/turtle10.png"></button></div>
+      <div class="grid-item"><button type="button" class="hoverable" (click)="ccService.seal11()"><img src="assets/images/temp/png/seal11.png"></button></div>
+      <div class="grid-item"><button type="button" class="hoverable" (click)="ccService.mouse12()"><img src="assets/images/temp/png/mouse12.png"></button></div>
+      <div class="grid-item"><button type="button" class="hoverable" (click)="ccService.koala13()"><img src="assets/images/temp/png/koala13.png"></button></div>
+      <div class="grid-item"><button type="button" class="hoverable" (click)="ccService.snail14()"><img src="assets/images/temp/png/snail14.png"></button></div>
+      <div class="grid-item"><button type="button" class="hoverable" (click)="ccService.hippo15()"><img src="assets/images/temp/png/hippo15.png"></button></div>
+      <div class="grid-item"><button type="button" class="hoverable" (click)="ccService.frog16()"><img src="assets/images/temp/png/frog16.png"></button></div>
+    </div>
+  </div>
+
 <div class="container">
     <form>
       <!-- first name -->
@@ -46,16 +68,18 @@
   
       <!-- pet name -->
       <br><label for="pet-name">Pet Name</label>
-      <input type="text" id="pet-name" required placeholder="Enter pet name here.">
+      <input #pet type="text" id="pet-name" required placeholder="Enter pet name here.">
 
       <!--<mat-form-field hintLabel="Max 30 characters" appearance="outline" color="accent">
         <mat-label>Pet Name</mat-label>
         <input #pet type="text" matInput placeholder="Enter pet name here." name="petname" />
       </mat-form-field>-->
       
-      <br><button type="button" (click)="this.onSubmit(pet.value)">
+      <br><button type="button" (click)="ccService.onSubmit(pet.value)">
         Submit
       </button>
       
     </form>
+    
   </div>
+

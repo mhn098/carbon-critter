@@ -19,6 +19,28 @@ export class AnalyticsComponent {
     canActivate: []
   };
 constructor(
+  private router: Router,
   public ccService: CCService
 ) {}
+
+public goAnalytics() {
+  this.router.navigate(['pet']);
+}
+
+public goCommunity() {
+  this.router.navigate(['pet']);
+}
+
+public goPet() {
+  this.router.navigate(['pet']);
+}
+
+public goResources() {
+  this.router.navigate(['pet']);
+}
+
+public goSignOut() {
+  this.router.navigate(['pet']);
+}
+
 }
