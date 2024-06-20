@@ -6,7 +6,7 @@ Personal pet whose health declines or gets better depending on the user's carbon
 Chat bot that reccomends how users can improve their carbon footprint based on their current habits.
 
 # Technologies Used
-Angular: Frontend web application framework run on Node.js
+Angular: Frontend web application framework run on Node.js.
 HTML/CSS/TypeScript: Frontend languages for creating the user interface and implementing interactivity.
-FastAPI: Backend web framework for building APIs with Python 
-
+FastAPI: Backend web framework for building APIs with Python.
+Intel LLM: Trained in jupyter notebook.
