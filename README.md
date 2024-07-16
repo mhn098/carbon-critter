@@ -11,6 +11,7 @@ HTML/CSS/TypeScript: Frontend languages for creating the user interface and impl
 FastAPI: Backend web framework for building APIs with Python.
 Intel LLM: Trained in jupyter notebook.
 
+#
 ![image](https://github.com/user-attachments/assets/a017ad8a-2b31-40c4-84b6-35312c980b5c)
 ![image](https://github.com/user-attachments/assets/d8a6d95d-aed7-41a2-89f4-7e48adb5f5cc)
 ![image](https://github.com/user-attachments/assets/f454cc36-bbad-43df-8933-a24aef5bf7d2)
